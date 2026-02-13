@@ -1,0 +1,115 @@
+.footer {
+    background: #1a3a2e;
+    padding: 4rem 2rem 2rem;
+    border-top: 1px solid var(--border-green);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    gap: 4rem;
+}
+
+.footer-logo {
+    margin-bottom: 1.5rem;
+}
+
+.footer-desc {
+    color: var(--text-gray);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 300px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social-link {
+    color: var(--text-white);
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 1;
+}
+
+.footer-links h3,
+.footer-newsletter h3 {
+    font-size: 1.1rem;
+    color: var(--text-white);
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--text-white);
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0;
+    margin-bottom: 2rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    background: transparent;
+    border: 1px solid var(--text-white);
+    padding: 0.8rem 1rem;
+    color: var(--text-white);
+    border-radius: 4px 0 0 4px;
+    font-family: inherit;
+}
+
+.newsletter-form input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.newsletter-form button {
+    background: var(--text-white);
+    color: var(--primary-dark);
+    border: 1px solid var(--text-white);
+    padding: 0.8rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    transition: all 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background: transparent;
+    color: var(--text-white);
+}
+
+.copyright {
+    font-size: 0.8rem;
+    color: var(--text-gray);
+    margin-top: auto;
+}
+
+@media (max-width: 968px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}

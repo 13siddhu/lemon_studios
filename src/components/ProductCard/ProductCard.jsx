@@ -6,7 +6,7 @@ const ProductCard = ({ title, description, price, image, delay = 0 }) => {
   return (
     <div className="product-card animate-scale-in" style={{ animationDelay: `${delay}s` }}>
       <div className="product-image">
-        <div className="plant-placeholder medium"></div>
+        <img src={image} alt={title} className="plant-image" />
       </div>
       <div className="product-info">
         <h3 className="product-title">{title}</h3>

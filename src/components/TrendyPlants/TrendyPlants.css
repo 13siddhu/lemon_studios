@@ -1,0 +1,138 @@
+.trendy-plants {
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: var(--text-white);
+}
+
+.trendy-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.trendy-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--glass-border);
+    border-radius: 40px;
+    padding: 3rem;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.trendy-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.trendy-content {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.trendy-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+}
+
+.trendy-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.trendy-info {
+    flex: 1.2;
+}
+
+.trendy-info h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--text-white);
+    line-height: 1.2;
+}
+
+.trendy-info p {
+    font-size: 0.95rem;
+    color: var(--text-gray);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.trendy-price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-white);
+    margin-bottom: 1.5rem;
+}
+
+.trendy-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-explore {
+    padding: 0.8rem 2rem;
+    background: transparent;
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.btn-explore:hover {
+    background: var(--text-white);
+    color: var(--primary-dark);
+}
+
+.btn-bag {
+    width: 46px;
+    height: 46px;
+    background: transparent;
+    border: 1px solid var(--text-white);
+    color: var(--text-white);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-bag:hover {
+    background: var(--text-white);
+    color: var(--primary-dark);
+}
+
+@media (max-width: 968px) {
+    .trendy-container {
+        grid-template-columns: 1fr;
+    }
+
+    .trendy-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .trendy-actions {
+        justify-content: center;
+    }
+}
