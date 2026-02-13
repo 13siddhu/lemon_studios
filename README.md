@@ -21,7 +21,7 @@ A modern, fully responsive plant e-commerce landing page built with React and Vi
 
 1. Clone the repository:
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/13siddhu/lemon_studios
 cd planto-ecommerce
 ```
 
@@ -86,30 +86,6 @@ netlify deploy --prod --dir=dist
 
 Alternatively, you can drag and drop the `dist` folder to [Netlify Drop](https://app.netlify.com/drop)
 
-## 📁 Project Structure
-
-```
-planto-ecommerce/
-├── public/
-├── src/
-│   ├── components/
-│   │   ├── Header.jsx
-│   │   ├── Header.css
-│   │   ├── Hero.jsx
-│   │   ├── Hero.css
-│   │   ├── ProductCard.jsx
-│   │   ├── ProductCard.css
-│   │   ├── Products.jsx
-│   │   └── Products.css
-│   ├── App.jsx
-│   ├── App.css
-│   ├── main.jsx
-│   └── index.css
-├── index.html
-├── package.json
-├── vite.config.js
-└── README.md
-```
 
 ## 🎨 Component Overview
 
