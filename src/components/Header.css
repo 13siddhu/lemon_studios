@@ -1,0 +1,148 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: rgba(26, 58, 46, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-green);
+}
+
+.header-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.logo-icon {
+  font-size: 1.5rem;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-white);
+  letter-spacing: -0.5px;
+}
+
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.nav-link {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 400;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text-white);
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: var(--text-white);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease;
+}
+
+.icon-btn:hover {
+  opacity: 0.7;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: var(--text-white);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+  background: rgba(26, 58, 46, 0.98);
+  padding: 1rem 2rem 2rem;
+  flex-direction: column;
+  gap: 1rem;
+  border-top: 1px solid var(--border-green);
+}
+
+.mobile-link {
+  color: var(--text-gray);
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.75rem 0;
+  transition: color 0.3s ease;
+}
+
+.mobile-link:hover {
+  color: var(--text-white);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .header-actions .icon-btn:first-child,
+  .header-actions .icon-btn:nth-child(2) {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    padding: 1rem;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+}
